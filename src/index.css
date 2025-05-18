@@ -27,7 +27,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  box-shadow: 0px 0px 0px 0.3px red;
 }
 
 .inner {
@@ -52,7 +51,7 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: bold;
-  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-size: clamp(2.5rem, 3.5vw, 5rem);
 }
 
 h2 {
@@ -60,5 +59,13 @@ h2 {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: bold;
-  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+}
+
+h3 {
+  font-family: "Playwrite DK Loopet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: bold;
+  font-size: clamp(1.25rem, 3.5vw, 2rem);
 }

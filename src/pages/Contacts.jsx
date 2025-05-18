@@ -5,7 +5,6 @@ export function Contacts() {
         <>
         <div className="contacts">
             <div className="inner">
-                <h1>Kontakt</h1>
             </div>
         </div>
         </>

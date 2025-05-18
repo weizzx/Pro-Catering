@@ -5,7 +5,6 @@ export function Menu() {
         <>
         <div className="menu">
             <div className="inner">
-                <h1>Menu</h1>
             </div>
         </div>
         </>

@@ -1,0 +1,15 @@
+hr {
+  color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.footer > .inner > div {
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 2em 0em;
+}
+
+.lower > p {
+  color: var(--secondary-dark);
+}

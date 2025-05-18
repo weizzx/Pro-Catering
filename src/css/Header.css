@@ -1,0 +1,14 @@
+.header {
+  height: 800px;
+  background-image: linear-gradient( #fcf3f53d, var(--light) 90%), url("../assets/images/header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.header .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
