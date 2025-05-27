@@ -1,0 +1,9 @@
+.contacts {
+  margin: 5rem auto;
+}
+
+.contacts > .inner {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}

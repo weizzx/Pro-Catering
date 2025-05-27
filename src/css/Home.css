@@ -1,0 +1,16 @@
+.icon-section {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem 0;
+}
+
+.icon-section hr {
+  color: var(--primary);
+  width: 200px;
+}
+
+.i > img{
+  width: 150px;
+  display: flex;
+  justify-self: center;
+}

@@ -1,14 +1,24 @@
-import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { useRef, useEffect, useState } from 'react';
 import '../css/EmailForm.css';
 
-export function EmailForm() {
+export function EmailForm({ message }) {
+  const formRef = useRef();
+  const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: '',
+    message: '' || message,
   });
 
-  const [submitted, setSubmitted] = useState(false);
+  useEffect(() => {
+  setFormData((prevData) => ({
+    ...prevData,
+    message: '' || message
+  }));
+  }, [message]);
+
+
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -16,16 +26,32 @@ export function EmailForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your email sending logic here
-    console.log(formData);
-    setSubmitted(true);
+
+    emailjs
+      .sendForm(
+        'service_v9rlv4q',
+        'template_544sy1f',
+        formRef.current,
+        '-PcfJFMtlq3KAdvso'
+      )
+      .then(
+        () => {
+          setSubmitted(true);
+          setFormData({ name: '', email: '', message: '' });
+        },
+        (error) => {
+          console.error('Email send error:', error);
+        }
+      );
   };
 
   return (
     <section className="email-section">
-      <h2>Kontaktujte nás</h2>
-      <form className="email-form" onSubmit={handleSubmit}>
+      <h2>Neváhejte nás oslovit!</h2>
+      <h2>Věříme, že budete spokojeni...</h2>
+      <form ref={formRef} className="email-form" onSubmit={handleSubmit}>
         <input
+          className="name"
           type="text"
           name="name"
           placeholder="Vaše jméno"
@@ -34,6 +60,7 @@ export function EmailForm() {
           required
         />
         <input
+          className="email"
           type="email"
           name="email"
           placeholder="Váš e-mail"
@@ -42,13 +69,14 @@ export function EmailForm() {
           required
         />
         <textarea
+          className="msg"
           name="message"
           placeholder="Vaše zpráva"
           value={formData.message}
           onChange={handleChange}
           required
         />
-        <button type="submit">Odeslat</button>
+        <button type="submit" className="submit">Odeslat</button>
         {submitted && <p className="success-msg">Děkujeme za zprávu! Ozveme se co nejdříve.</p>}
       </form>
     </section>

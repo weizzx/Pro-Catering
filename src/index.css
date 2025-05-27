@@ -46,26 +46,27 @@ a:hover {
   color: var(--primary-dark);
 }
 
-h1 {
+h1, h2, h3, h4 {
   font-family: "Playwrite DK Loopet", cursive;
   font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: bold;
+}
+
+h1 {
+  font-weight: 800;
   font-size: clamp(2.5rem, 3.5vw, 5rem);
 }
 
 h2 {
-  font-family: "Playwrite DK Loopet", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: bold;
+  font-weight: 500;
   font-size: clamp(2rem, 3.5vw, 2.5rem);
 }
 
 h3 {
-  font-family: "Playwrite DK Loopet", cursive;
-  font-optical-sizing: auto;
   font-weight: 400;
-  font-style: bold;
-  font-size: clamp(1.25rem, 3.5vw, 2rem);
+  font-size: clamp(1.25rem, 3.5vw, 1.75rem);
+}
+
+h4 {
+  font-weight: 300;
+  font-size: clamp(1rem, 3.5vw, 1.25rem);
 }
