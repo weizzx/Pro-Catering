@@ -3,7 +3,9 @@
 }
 
 .contacts > .inner {
-display: flex;
-justify-content: space-around;
-align-items: center;
+display: grid;
+gap: 2em;
+grid-template-columns: 1fr 1fr;
+text-align: center;
+justify-content: center;
 }

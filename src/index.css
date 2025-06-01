@@ -46,7 +46,7 @@ a:hover {
   color: var(--primary-dark);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
   font-family: "Playwrite DK Loopet", cursive;
   font-optical-sizing: auto;
 }

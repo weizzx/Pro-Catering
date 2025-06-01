@@ -29,6 +29,14 @@
  min-width: 100px;
 }
 
+.email-form .name {
+  grid-area: name;
+}
+
+.email-form .email {
+  grid-area: email;
+}
+
 .email-form input,
 .email-form textarea {
   padding: 1.25rem 1.25rem;
@@ -44,6 +52,7 @@
   grid-area: msg;
   resize: none;
   min-height: 200px;
+  max-width: 1000px;
 }
 
 .email-form button {

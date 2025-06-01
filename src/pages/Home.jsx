@@ -1,8 +1,8 @@
 import '../css/Home.css'
-import Icon1 from "../assets/icons/i1.png"
-import Icon2 from "../assets/icons/i2.png"
-import Icon3 from "../assets/icons/i3.png"
-import Icon4 from "../assets/icons/i4.png"
+import Icon1 from "../assets/icons/i1.svg"
+import Icon2 from "../assets/icons/i2.svg"
+import Icon3 from "../assets/icons/i3.svg"
+import Icon4 from "../assets/icons/i4.svg"
 
 export function Home() {
     return (
@@ -18,27 +18,19 @@ export function Home() {
                 </div>
                 <div className="icon-section">
                     <div className="i i1">
-                        <hr />
                         <img src={ Icon1 } alt="" />
-                        <hr />
                         <p>Máme přes 30 let zkušeností</p>
                     </div>
                     <div className="i i2">
-                        <hr />
                         <img src={ Icon2 } alt="" />
-                        <hr />
                         <p>Zákládáme si dlouhodobé spolupráci</p>
                     </div>
                     <div className="i i3">
-                        <hr />
                         <img src={ Icon3 } alt="" />
-                        <hr />
                         <p>Vždy držíme termíny a sjednané dohody</p>
                     </div>
                     <div className="i i4">
-                        <hr />
                         <img src={ Icon4 } alt="" />
-                        <hr />
                         <p>Vždy volíme osobní přístupp</p>
                     </div>
                 </div>
