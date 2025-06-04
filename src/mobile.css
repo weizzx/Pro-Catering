@@ -1,14 +1,70 @@
 @media (max-width: 600px) {
 
+    .inner {
+        width: 100% !important;
+        padding: 0.5em 1.5em !important;
+        justify-content: space-between !important;
+    }
+
+    iframe {
+        width: clamp(100px, 100%, 500px);
+        max-height: 300px;
+    }
+
+    .header .inner {
+        justify-content: center !important;
+    }
+
+    .links.menu {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .menu-img {
+        display: none;
+    }
+
+    .navbar .inner {
+        grid-template-areas: "logo menu" !important;
+    }
+
+    .navbar .menu-img {
+        grid-area: menu;
+        display: block !important;
+        width: clamp(1rem, 5vw + 1rem, 5rem);
+        cursor: pointer;
+    }
+
     .navbar .links {
         display: none !important;
     }
 
-    .inner {
-        justify-content: center !important;
-        align-items: center !important;
-        width: 100% !important;
-        padding: 0 20px !important;
+    .navbar .logo-img {
+        width: clamp(2rem, 5vw + 1rem, 5rem);
+    }
+
+    .links.menu {
+        position: relative;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 55px;
+        right: 0;
+        background-color: var(--light);
+        max-width: 50vw;
+        height: 100vh;
+        padding-top: 2em;
+        box-shadow: -1px 10px 8px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    /* When menu is open */
+    .links.menu.open {
+        display: flex !important;
     }
 
     .header {
@@ -35,26 +91,5 @@
               "submit submit"
               "submit-msg submit-msg" !important;
     }
-
-    h1 {
-        font-weight: 800;
-        font-size: clamp(2.5rem, 10vw, 5rem);
-    }
-
-    h2 {
-        font-weight: 500;
-        font-size: clamp(2rem, 5vw, 2.5rem);
-    }
-
-    h3 {
-        font-weight: 400;
-        font-size: clamp(1.25rem, 5vw, 1.75rem);
-    }
-
-    h4 {
-        font-weight: 300;
-        font-size: clamp(1rem, 5vw, 1.25rem);
-    }
-
 
 }

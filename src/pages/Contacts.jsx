@@ -13,8 +13,8 @@ export function Contacts() {
                     <iframe
                         title="Mapy.cz"
                         src="https://mapy.com/s/demubapoto"
-                        width="400px"
-                        height="300"
+                        width="500"
+                        height="400"
                         frameBorder="0"
                         allowFullScreen
                     ></iframe>

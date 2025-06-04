@@ -9,7 +9,7 @@ export function Menu() {
         <div className="menu">
             <div className="inner">
                 <div className="menu-grid">
-                    <div><Card img={Img1} name="Řízky" price={840} /></div>
+                    <Card img={Img1} name="Řízky" price={840} />
                     <Card img={Img2} name="Ovoce" price={200}/>
                     <Card/>
                     <Card/>

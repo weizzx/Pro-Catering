@@ -9,12 +9,8 @@ export function Home() {
         <div className="home">
             <div className="inner">
                 <div className="context">
-                    <h3>
-                        Vítejte na stránkách, kde se z vaší akce stane úžasný zážitek! Naše společnost se specializuje na catering pro různé typy událostí, od malých soukromých oslav až po velké firemní akce.
-                    </h3>
-                    {/* <p>Nabízíme profesionální cateringové služby pro jakoukoliv příležitost. Zajišťujeme rodinné oslavy, svatby, společenské akce, firemní akce a školení, sportovní akce, … Pro naše zákazníky připravíme rozmanité gastronomické pochoutky (cukrářské, vegetariánské, masové, k přípravě na grilu, hotová jídla, …).</p>
-                    <p>Pro poptávku a cenovou nabídku můžete využít tyto stránky a celou akci si "naklikat".</p>
-                    <p>Oslovují nás zákazníci malých rodinných událostí i organizace a firmy, které plánují akce pro stovky osob. Vždy k našim zákazníkům přistupujeme individuálně a po konzultaci s nimi připravíme několik variant možného občerstvení (cateringu). Nabízíme i možnost pronájmu krásných prostor v partnerském penzionu "STARÁ POŠTA" v Nymburce. Naši zákazníci často využívají možnosti pronájmu našich párty stanů a gastro vybavení.</p> */}
+                    <h4>Vítejte na stránkách, kde se z vaší akce stane úžasný zážitek!</h4>
+                    <h5>Naše společnost se specializuje na catering pro různé typy událostí, od malých soukromých oslav až po velké firemní akce.</h5>
                 </div>
                 <div className="icon-section">
                     <div className="i i1">

@@ -47,8 +47,8 @@ export function EmailForm({ message }) {
 
   return (
     <section className="email-section">
-      <h2>Neváhejte nás oslovit!</h2>
-      <h2>Věříme, že budete spokojeni...</h2>
+      <h3>Neváhejte nás oslovit!</h3>
+      <h3>Věříme, že budete spokojeni...</h3>
       <form ref={formRef} className="email-form" onSubmit={handleSubmit}>
         <input
           className="name"
