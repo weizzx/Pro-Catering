@@ -1,18 +1,18 @@
-.menu {
+.menu-section {
   width: 100%;
-  height: 100%;
+  padding: 3rem 1rem;
+  background-color: var(--background-light);
 }
 
-.menu > .inner {
+.menu-section > .inner {
   display: flex;
-  padding: 20px;
+  justify-content: center;
 }
 
 .menu-grid {
   display: grid;
-  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
-  gap: 24px;
-  max-width: 1200px;
+  gap: 2rem;
   width: 100%;
+  max-width: 1200px;
 }

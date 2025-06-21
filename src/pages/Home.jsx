@@ -6,31 +6,31 @@ import Icon4 from "../assets/icons/i4.svg"
 
 export function Home() {
     return (
-        <div className="home">
+        <section className="home">
             <div className="inner">
                 <div className="context">
-                    <h4>Vítejte na stránkách, kde se z vaší akce stane úžasný zážitek!</h4>
-                    <h5>Naše společnost se specializuje na catering pro různé typy událostí, od malých soukromých oslav až po velké firemní akce.</h5>
+                    <h3>Vítejte na stránkách, kde se z vaší akce stane úžasný zážitek!</h3>
+                    <h4>Naše společnost se specializuje na catering pro různé typy událostí, od malých soukromých oslav až po velké firemní akce.</h4>
                 </div>
                 <div className="icon-section">
-                    <div className="i i1">
-                        <img src={ Icon1 } alt="" />
+                    <div className="icon-card">
+                        <img src={Icon1} alt="30 let zkušeností" />
                         <p>Máme přes 30 let zkušeností</p>
                     </div>
-                    <div className="i i2">
-                        <img src={ Icon2 } alt="" />
-                        <p>Zákládáme si dlouhodobé spolupráci</p>
+                    <div className="icon-card">
+                        <img src={Icon2} alt="Dlouhodobá spolupráce" />
+                        <p>Zakládáme si na dlouhodobé spolupráci</p>
                     </div>
-                    <div className="i i3">
-                        <img src={ Icon3 } alt="" />
+                    <div className="icon-card">
+                        <img src={Icon3} alt="Dodržování termínů" />
                         <p>Vždy držíme termíny a sjednané dohody</p>
                     </div>
-                    <div className="i i4">
-                        <img src={ Icon4 } alt="" />
-                        <p>Vždy volíme osobní přístupp</p>
+                    <div className="icon-card">
+                        <img src={Icon4} alt="Osobní přístup" />
+                        <p>Vždy volíme osobní přístup</p>
                     </div>
                 </div>
             </div>
-        </div>
-    )
+        </section>
+    );
 }
