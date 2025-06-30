@@ -1,6 +1,6 @@
 .menu-section {
   width: 100%;
-  padding: 3rem 1rem;
+  padding: 5rem 1rem;
   background-color: var(--background-light);
 }
 
@@ -15,4 +15,5 @@
   gap: 2rem;
   width: 100%;
   max-width: 1200px;
+  justify-content: center;
 }

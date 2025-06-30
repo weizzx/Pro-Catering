@@ -53,3 +53,7 @@
   border: none;
   background-color: transparent;
 }
+
+.open {
+  width: 15em;
+}

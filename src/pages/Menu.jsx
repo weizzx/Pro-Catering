@@ -10,7 +10,7 @@ const items = [
 
 export function Menu() {
   return (
-    <section className="menu">
+    <section className="menu-section">
       <div className="inner">
         <div className="menu-grid">
           {items.map((item, index) => (
